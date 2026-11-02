@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="section" id="profile">
+        <h1 id="main-title">Welcome to My Portfolio</h1>
+        <h2 id="name">Sakenov Danial</h2>
+        <p id="headline">SE-2540</p>
+        <button id="btn-light">Light Theme</button>
+        <button id="btn-dark">Dark Theme</button>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p id="status">jQuery!</p>
+        <p id="facts">this is a text that will be hide</p>
+        <button id="btn-hide">Hide</button>
+        <button id="btn-show">Show</button>
+        <button id="btn-toggle">Toggle</button>
+    </div>
+
+    <div class="section" id="gallery">
+        <h2>Gallery</h2>
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Астана - Байтерек">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Астана - Вид на город">
+        <br>
+        <button id="btn-fade-in">Fade In</button>
+        <button id="btn-fade-out">Fade Out</button>
+        <button id="btn-fade-toggle">Fade Toggle</button>
+    </div>
+
+    <div class="section" id="panels">
+        <h2>Collapsible Panels</h2>
+        <h3 class="panel-header">My Favorite Music</h3>
+        <div class="panel-content">Darkhan juz, muzart</div>
+        <h3 class="panel-header">My Favorite Movie</h3>
+        <div class="panel-content"> Interstellar</div>
+        <h3 class="panel-header">My Favorite Subject</h3>
+        <div class="panel-content">pe</div>
+    </div>
+
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <ul id="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        </ul>
+        <input type="text" id="skill-input" placeholder="New skill">
+        <button id="btn-add">Add Skill</button>
+        <button id="btn-prepend">Prepend Skill</button>
+        <button id="btn-remove">Remove Skill</button>
+    </div>
+
+    <div class="section" id="links">
+        <h2>Social Links</h2>
+        <a id="social-link" href="https://google.com" target="_blank">Visit Profile</a>
+        <br><br>
+        <button id="btn-change-link">Change Link to GitHub</button>
+    </div>
+
+    <div class="section" id="form-section">
+        <h2>Form Interaction</h2>
+        <form id="user-form">
+            <input type="text" id="input-name" placeholder="Name"><br><br>
+            <input type="email" id="input-email" placeholder="Email">
+        </form>
+        <p>Live Name: <span id="live-name"></span></p>
+        <p>Live Email: <span id="live-email"></span></p>
+    </div>
+
+    <div class="section" id="animations">
+        <h2>Skill Animations</h2>
+        <button id="btn-animate">Animate My Skills</button>
+        <div>
+            <p>HTML</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar" id="bar-html" data-width="90%"></div>
+            </div>
+        </div>
+        <div>
+            <p>CSS</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar" id="bar-css" data-width="75%"></div>
+            </div>
+        </div>
+        <div>
+            <p>JS</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar" id="bar-js" data-width="60%"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
